@@ -1,0 +1,15 @@
+{
+    "dataSource": {
+        "type": "json",
+        "filename": "http://localhost:9200/jolanda_map/_search",
+        "mapping": {
+            "anno": {
+                "type": "number"
+              }}, 
+     "measures": [
+                {
+                    "uniqueName": "Anno",
+                    "aggregation": "sum",
+                    "format": "-6fso6qmiksl00"
+                }
+]}}
