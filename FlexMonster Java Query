@@ -93,6 +93,10 @@
         ],
         "measures": [
             {
+                "uniqueName": "ProvaStefano",
+                "formula": "sum('Price') / 2"
+            },
+            {
                 "uniqueName": "Price",
                 "aggregation": "sum",
                 "format": "-6fso6qmiksl00"
