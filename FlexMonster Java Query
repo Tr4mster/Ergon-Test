@@ -1,15 +1,194 @@
 {
     "dataSource": {
         "type": "json",
-        "filename": "http://localhost:9200/jolanda_map/_search",
+        "filename": "https://cdn.flexmonster.com/data/retail-data.json",
         "mapping": {
-            "anno": {
+            "Quantity": {
                 "type": "number"
-              }}, 
-     "measures": [
-                {
-                    "uniqueName": "Anno",
-                    "aggregation": "sum",
-                    "format": "-6fso6qmiksl00"
+            },
+            "Price": {
+                "type": "number"
+            },
+            "Retail Category": {
+                "type": "string"
+            },
+            "Sales": {
+                "type": "number"
+            },
+            "Order Date": {
+                "type": "year/quarter/month/day"
+            },
+            "Date": {
+                "type": "date"
+            },
+            "Status": {
+                "type": "string"
+            },
+            "Product Code": {
+                "type": "string"
+            },
+            "Phone": {
+                "type": "string"
+            },
+            "Country": {
+                "type": "string",
+                "folder": "Location"
+            },
+            "City": {
+                "type": "string",
+                "folder": "Location"
+            },
+            "CurrencyID": {
+                "type": "property",
+                "hierarchy": "Country"
+            },
+            "Contact Last Name": {
+                "type": "string"
+            },
+            "Contact First Name": {
+                "type": "string"
+            },
+            "Deal Size": {
+                "type": "string"
+            }
+        }
+    },
+    "slice": {
+        "rows": [
+            {
+                "uniqueName": "Country",
+                "filter": {
+                    "members": [
+                        "country.[australia]",
+                        "country.[usa]",
+                        "country.[japan]"
+                    ]
                 }
-]}}
+            },
+            {
+                "uniqueName": "Status",
+                "filter": {
+                    "exclude": [
+                        "status.[in process]",
+                        "status.[resolved]"
+                    ]
+                }
+            }
+        ],
+        "columns": [
+            {
+                "uniqueName": "Order Date",
+                "filter": {
+                    "members": [
+                        "order date.[2019].[quarter 3]",
+                        "order date.[2019].[quarter 4]",
+                        "order date.[2018].[quarter 4]",
+                        "order date.[2018].[quarter 3]"
+                    ]
+                }
+            },
+            {
+                "uniqueName": "[Measures]"
+            }
+        ],
+        "measures": [
+{
+                "uniqueName": "ProvaStefano",
+                "formula": "sum('Price') / 2",
+            },
+            {
+                "uniqueName": "Price",
+                "aggregation": "sum",
+                "format": "-6fso6qmiksl00"
+            },
+            {
+                "uniqueName": "Sales",
+                "aggregation": "sum",
+                "format": "-6fso6qmiksl00"
+            }
+        ],
+        "sorting": {
+            "column": {
+                "type": "desc",
+                "tuple": [],
+                "measure": {
+                    "uniqueName": "Price",
+                    "aggregation": "sum"
+                }
+            }
+        },
+        "expands": {
+            "rows": [
+                {
+                    "tuple": [
+                        "country.[japan]"
+                    ]
+                },
+                {
+                    "tuple": [
+                        "country.[australia]"
+                    ]
+                },
+                {
+                    "tuple": [
+                        "country.[usa]"
+                    ]
+                }
+            ]
+        },
+        "drills": {
+            "columns": [
+                {
+                    "tuple": [
+                        "order date.[2019]"
+                    ]
+                },
+                {
+                    "tuple": [
+                        "order date.[2018]"
+                    ]
+                }
+            ]
+        }
+    },
+    "options": {
+        "chart": {
+            "type": "column_line"
+        }
+    },
+    "conditions": [
+        {
+            "formula": "#value > 500000",
+            "format": {
+                "backgroundColor": "#00A45A",
+                "color": "#FFFFFF",
+                "fontFamily": "Arial",
+                "fontSize": "12px"
+            }
+        },
+        {
+            "formula": "#value < 1000",
+            "format": {
+                "backgroundColor": "#DF3800",
+                "color": "#FFFFFF",
+                "fontFamily": "Arial",
+                "fontSize": "12px"
+            }
+        }
+    ],
+    "formats": [
+        {
+            "name": "-6fso6qmiksl00",
+            "thousandsSeparator": " ",
+            "decimalSeparator": ".",
+            "decimalPlaces": 0,
+            "currencySymbol": "$",
+            "positiveCurrencyFormat": "$1",
+            "nullValue": "-",
+            "textAlign": "right",
+            "isPercent": false
+        }
+    ],
+    "version": "2.9.26",
+    "creationDate": "2022-06-07T12:54:06.559Z"
+}
