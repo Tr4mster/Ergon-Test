@@ -56,16 +56,6 @@
     "slice": {
         "rows": [
             {
-                "uniqueName": "Country",
-                "filter": {
-                    "members": [
-                        "country.[australia]",
-                        "country.[usa]",
-                        "country.[japan]"
-                    ]
-                }
-            },
-            {
                 "uniqueName": "Status",
                 "filter": {
                     "exclude": [
