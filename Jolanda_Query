@@ -1,0 +1,42 @@
+{
+    "dataSource": {
+        "type": "elasticsearch",
+        "node": "http://localhost:9200",
+        "index": "jolanda_map"
+    "slice": {
+        "rows": [
+            {
+                "uniqueName": "anno",
+            },
+            {
+                "uniqueName": "mese",
+            }
+        ],
+        "columns": [
+            {
+                "uniqueName": "budget",
+            }
+        ]
+      }
+    },
+    "options": {
+        "chart": {
+            "type": "column_line"
+        }
+    },
+    "formats": [
+        {
+            "name": "-6fso6qmiksl00",
+            "thousandsSeparator": " ",
+            "decimalSeparator": ".",
+            "decimalPlaces": 0,
+            "currencySymbol": "$",
+            "positiveCurrencyFormat": "$1",
+            "nullValue": "-",
+            "textAlign": "right",
+            "isPercent": false
+        }
+    ],
+    "version": "2.9.26",
+    "creationDate": "2022-06-07T12:54:06.559Z"
+}
