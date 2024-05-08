@@ -17,10 +17,6 @@
             "caption": "anno"
         },
         {
-            "uniqueName": "mese",
-            "caption": "mese" 
-        },   
-        {
             "uniqueName": "cod_age",
             "caption": "cod_age" 
         }, 
