@@ -47,7 +47,77 @@
         {
             "uniqueName": "ven_lordo",
             "aggragation": "sum",
-            "caption": "Somma1"
+            "caption": "ven_lordo"
+        },
+        {
+            "uniqueName": "ven_incondizionato",
+            "aggragation": "sum",
+            "caption": "ven_incondizionato"
+        },
+        {
+            "uniqueName": "ven_finanziari",
+            "aggragation": "sum",
+            "caption": "ven_finanziari"
+        },
+        {
+            "uniqueName": "ven_canvass",
+            "aggragation": "sum",
+            "caption": "ven_canvass"
+        },
+        {
+            "uniqueName": "ven_offerta",
+            "aggragation": "sum",
+            "caption": "ven_offerta"
+        },
+        {
+            "uniqueName": "res_lordo",
+            "aggragation": "sum",
+            "caption": "res_lordo"
+        },
+        {
+            "uniqueName": "res_incondizionato",
+            "aggragation": "sum",
+            "caption": "res_incondizionato"
+        },
+        {
+            "uniqueName": "res_finanziari",
+            "aggragation": "sum",
+            "caption": "res_finanziari"
+        },
+        {
+            "uniqueName": "res_offerta",
+            "aggragation": "sum",
+            "caption": "res_offerta"
+        },
+        {
+            "uniqueName": "ven_quantita",
+            "aggragation": "sum",
+            "caption": "ven_quantita"
+        },
+        {
+            "uniqueName": "res_quantita",
+            "aggragation": "sum",
+            "caption": "res_quantita"
+        },
+        {
+            "uniqueName": "oma_quantita",
+            "aggragation": "sum",
+            "caption": "oma_quantita"
+        },
+        {
+            "uniqueName": "ven_quantita_pz",
+            "aggragation": "sum",
+            "caption": "ven_quantita_pz"
+        },
+        {
+            "uniqueName": "res_quantita_pz",
+            "aggragation": "sum",
+            "caption": "res_quantita_pz"
+        },
+        {
+            "uniqueName": "oma_quantita_pz",
+            "aggragation": "sum",
+            "caption": "oma_quantita_pz"
         }]
     }
 }
