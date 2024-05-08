@@ -1,0 +1,28 @@
+{
+    "dataSource": {
+        "type": "elasticsearch",
+        "node": "http://localhost:9200",
+        "index": "jolanda_map"
+    },
+    "slice": {
+        "rows": [{
+        "uniqueName": "anno",
+        "caption": "anno"
+        }],
+    "columns": [{
+        "uniqueName": "mese",
+        "caption": "mese"
+        }, 
+        {
+            "uniqueName": "[Measures]"
+        }],
+    "measures": [{
+        "uniqueName": "budget",
+        "aggregation": "sum",
+        "caption": "budget"
+        }]
+    }
+}
+        
+
+    
