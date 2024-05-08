@@ -19,10 +19,6 @@
             "caption": "cod_age" 
         }, 
         {
-            "uniqueName": "cod_int",
-            "caption": "cod_int" 
-        },
-        {
             "uniqueName": "cod_cli",
             "caption": "cod_cli"
         },
