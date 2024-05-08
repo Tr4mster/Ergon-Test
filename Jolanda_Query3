@@ -24,22 +24,7 @@
             "uniqueName": "cod_int",
             "caption": "cod_int" 
         },
-        {
-            "uniqueName": "cod_cli",
-            "caption": "cod_cli"
-        },
-        {
-            "uniqueName": "cod_linea_comm",
-            "caption": "cod_linea_comm" 
-        },   
-        {
-            "uniqueName": "cod_sett_comm",
-            "caption": "cod_sett_comm" 
-        }, 
-        {
-            "uniqueName": "cod_art",
-            "caption": "cod_art" 
-        },
+
         {
             "uniqueName": "[Measures]"
         }],
