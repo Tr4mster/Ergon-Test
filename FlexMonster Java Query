@@ -56,6 +56,16 @@
     "slice": {
         "rows": [
             {
+                "uniqueName": "Country",
+                "filter": {
+                    "members": [
+                        "country.[australia]",
+                        "country.[usa]",
+                        "country.[japan]"
+                    ]
+                }
+            },
+            {
                 "uniqueName": "Status",
                 "filter": {
                     "exclude": [
@@ -83,14 +93,15 @@
         ],
         "measures": [
             {
-                "uniqueName": "ProvaStefano",
-                "formula": "sum('Price') / 2"
-            },
-            {
                 "uniqueName": "Price",
                 "aggregation": "sum",
                 "format": "-6fso6qmiksl00"
             },
+            {
+                "uniqueName": "Sales",
+                "aggregation": "sum",
+                "format": "-6fso6qmiksl00"
+            }
         ],
         "sorting": {
             "column": {
