@@ -6,7 +6,10 @@
     },
     "slice": {
         "rows": [
-                
+        {
+            "uniqueName": "mese",
+            "caption": "mese",
+        }
         ],
     "columns": [
         {
