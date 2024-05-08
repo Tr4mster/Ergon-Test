@@ -26,11 +26,6 @@
             "uniqueName": "ven_quantita",
             "aggregation": "sum",
             "caption": "VEN_QUAN"
-        },
-        {
-            "uniqueName": "somma2",
-            "formula": "'VEN_QUAN' - 'RES_QUAN'",
-            "caption": "SOMMA""  
         }
 ]
     }
