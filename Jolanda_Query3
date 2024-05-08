@@ -6,6 +6,9 @@
     },
     "slice": {
         "rows": [
+                
+        ],
+    "columns": [
         {
             "uniqueName": "anno",
             "caption": "anno"
@@ -37,11 +40,6 @@
         {
             "uniqueName": "cod_art",
             "caption": "cod_art" 
-        }        
-        ],
-    "columns": [{
-        "uniqueName": "mese",
-        "caption": "mese"
         },
         {
             "uniqueName": "[Measures]"
