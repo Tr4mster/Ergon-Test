@@ -14,6 +14,18 @@
             "caption": "anno"
         },
         {
+            "uniqueName": "mese",
+            "caption": "mese" 
+        },   
+        {
+            "uniqueName": "cod_age",
+            "caption": "cod_age" 
+        }, 
+        {
+            "uniqueName": "cod_int",
+            "caption": "cod_int" 
+        },
+        {
             "uniqueName": "[Measures]"
         }],
     "measures": [{
