@@ -17,9 +17,9 @@
             "uniqueName": "[Measures]"
         }],
     "measures": [{
-        "uniqueName": "budget",
+        "uniqueName": "ven_lordo",
         "aggregation": "sum",
-        "caption": "budget"
+        "caption": "Vendite"
         }]
     }
 }
