@@ -99,7 +99,7 @@
             },
             {
                 "uniqueName": "Prova",
-                "formula": "sum(Price) - sum(Sales)"
+                "formula": "sum('Price') - sum('Sales')"
             }
 
         ],
