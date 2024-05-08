@@ -1,0 +1,10 @@
+{
+    "dataSource": {
+        "type": "api",
+        "url": "https://5f912c07b38c4cdb868ca24cd15cd58d.us-central1.gcp.cloud.es.io",
+        "index": "jolanda_map"
+    }
+}
+    
+
+    
