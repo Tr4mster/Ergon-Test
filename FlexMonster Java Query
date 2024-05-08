@@ -96,7 +96,12 @@
                 "uniqueName": "Price",
                 "aggregation": "sum",
                 "format": "-6fso6qmiksl00"
+            },
+            {
+                "uniqueName": "Prova",
+                "formula": "sum(Price) - sum(Sales)"
             }
+
         ],
         "sorting": {
             "column": {
