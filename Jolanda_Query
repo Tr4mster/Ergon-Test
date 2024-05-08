@@ -3,6 +3,7 @@
         "type": "elasticsearch",
         "node": "http://localhost:9200",
         "index": "jolanda_map"
+    },
     "slice": {
         "rows": [
             {
@@ -16,8 +17,7 @@
             {
                 "uniqueName": "budget",
             }
-        ]
-      }
+        ],
     },
     "options": {
         "chart": {
