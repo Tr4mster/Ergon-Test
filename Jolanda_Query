@@ -18,23 +18,7 @@
                 "uniqueName": "budget",
             }
         ],
-    },
-    "options": {
-        "chart": {
-            "type": "column_line"
-        }
-    },
-    "formats": [
-        {
-            "name": "-6fso6qmiksl00",
-            "thousandsSeparator": " ",
-            "decimalSeparator": ".",
-            "decimalPlaces": 0,
-            "currencySymbol": "$",
-            "positiveCurrencyFormat": "$1",
-            "nullValue": "-",
-            "textAlign": "right",
-            "isPercent": false
-        }
-    ],
+    }
 }
+
+    
