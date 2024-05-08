@@ -96,11 +96,6 @@
                 "uniqueName": "Price",
                 "aggregation": "sum",
                 "format": "-6fso6qmiksl00"
-            },
-            {
-                "uniqueName": "Sales",
-                "aggregation": "sum",
-                "format": "-6fso6qmiksl00"
             }
         ],
         "sorting": {
