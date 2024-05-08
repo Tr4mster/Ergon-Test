@@ -29,7 +29,7 @@
         },
         {
             "uniqueName": "somma2",
-            "formula": "'ven_quantita' - 'res_quantita'",
+            "formula": "'VEN_QUAN' - 'RES_QUAN'",
             "caption": "SOMMA""  
         }
 ]
