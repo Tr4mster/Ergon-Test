@@ -16,11 +16,18 @@
         {
             "uniqueName": "[Measures]"
         }],
-    "measures": [{
-        "uniqueName": "Somma2",
-        "formula": "sum('ven_quantita') + sum('oma_quantita')",
-        "caption": "Somma2"
-        }]
+    "measures": [
+        {
+            "uniqueName": "res_quantita",
+            "aggregation": "sum",
+            "caption": "RES_QUAN"
+        },
+        {
+            "uniqueName": "ven_quantita",
+            "aggregation": "sum",
+            "caption": "VEN_QUAN"
+        }
+]
     }
 }
         
