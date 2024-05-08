@@ -18,7 +18,7 @@
         }],
     "measures": [{
         "uniqueName": "Somma2",
-        "formula": "sum('ven_quantita') - sum('res_quantita') + sum('oma_quantita')",
+        "formula": "sum('ven_quantita') + sum('oma_quantita')",
         "caption": "Somma2"
         }]
     }
