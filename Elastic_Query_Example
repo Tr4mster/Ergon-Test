@@ -1,0 +1,27 @@
+{
+    "dataSource": {
+      "type": "elasticsearch",
+      /* the host for connection */
+      "node": "https://olap.flexmonster.com:9200",
+      /* the name of Elasticsearch index to connect */
+      "index": "fm-product-sales"
+    },
+    "slice": {
+      "rows": [{
+          "uniqueName": "Category.keyword",
+          "caption": "Category"
+        }
+      ],
+      "columns": [{
+        "uniqueName": "Color.keyword",
+        "caption": "Color"
+      }, {
+        "uniqueName": "[Measures]"
+      }],
+      "measures": [{
+        "uniqueName": "Price",
+        "aggregation": "sum",
+        "caption": "Price"
+      }]
+    }
+  }
