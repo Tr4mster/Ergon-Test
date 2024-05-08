@@ -1,0 +1,44 @@
+{
+    "dataSource": {
+        "type": "elasticsearch",
+        "node": "http://localhost:9200",
+        "index": "jolanda_map"
+    },
+    "slice": {
+        "rows": [
+        {
+            "uniqueName": "anno",
+            "caption": "anno"
+        },
+        {
+            "uniqueName": "mese",
+            "caption": "mese" 
+        },   
+        {
+            "uniqueName": "cod_age",
+            "caption": "cod_age" 
+        }, 
+        {
+            "uniqueName": "cod_linea_comm",
+            "caption": "cod_linea_comm" 
+        },   
+        {
+            "uniqueName": "cod_sett_comm",
+            "caption": "cod_sett_comm" 
+        }       
+        ],
+    "columns": [
+        {
+            "uniqueName": "[Measures]"
+        }],
+    "measures": [
+        {
+            "uniqueName": "Budget",
+            "formula": "sum('budget')",
+            "caption": "Budget"
+        }]
+    }
+}
+        
+
+    
