@@ -33,6 +33,11 @@
         }],
     "measures": [
         {
+            "uniqueName": "budget",
+            "formula": "sum('budget')",
+            "caption": "budget"
+        },
+        {
             "uniqueName": "Somma1",
             "formula": "sum('ven_lordo') - ( sum('ven_incondizionato') + sum('ven_finanziari') + sum('ven_canvass') + sum('ven_offerta') ) - ( sum('res_lordo') - ( sum('res_incodizionato') + sum('res_finanziari') + sum('res_offerta') + sum('res_offerta') ) )",
             "caption": "Somma1"
