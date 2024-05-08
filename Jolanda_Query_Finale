@@ -19,24 +19,31 @@
             "caption": "cod_age" 
         }, 
         {
+            "uniqueName": "cod_int",
+            "caption": "cod_int" 
+        },
+        {
+            "uniqueName": "cod_cli",
+            "caption": "cod_cli"
+        },
+        {
             "uniqueName": "cod_linea_comm",
             "caption": "cod_linea_comm" 
         },   
         {
             "uniqueName": "cod_sett_comm",
             "caption": "cod_sett_comm" 
-        }      
+        }, 
+        {
+            "uniqueName": "cod_art",
+            "caption": "cod_art" 
+        }        
         ],
     "columns": [
         {
             "uniqueName": "[Measures]"
         }],
     "measures": [
-        {
-            "uniqueName": "budget",
-            "formula": "sum('budget')",
-            "caption": "budget"
-        },
         {
             "uniqueName": "Somma1",
             "formula": "sum('ven_lordo') - ( sum('ven_incondizionato') + sum('ven_finanziari') + sum('ven_canvass') + sum('ven_offerta') ) - ( sum('res_lordo') - ( sum('res_incodizionato') + sum('res_finanziari') + sum('res_offerta') + sum('res_offerta') ) )",
