@@ -4,7 +4,7 @@
         "node": "http://localhost:9200",
         "index": "jolanda_map"
         requestHeaders: {
-            "Authorization": Basic elastic:ergon.964
+            "Authorization": Basic "elastic:ergon.964"
     },
     "slice": {
         "rows": [{
